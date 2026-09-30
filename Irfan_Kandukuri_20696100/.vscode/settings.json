@@ -1,0 +1,6 @@
+{
+    "sonarlint.connectedMode.project": {
+        "connectionId": "poc07-sonarqube",
+        "projectKey": "POC-07"
+    }
+}

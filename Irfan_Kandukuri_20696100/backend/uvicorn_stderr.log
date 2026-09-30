@@ -1,0 +1,8 @@
+C:\Users\SH20695879\Desktop\inventory_management_phase1\backend\.venv\Lib\site-packages\opentelemetry\instrumentation\dependencies.py:4: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import (
+INFO:     Started server process [35456]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+C:\Users\SH20695879\Desktop\inventory_management_phase1\backend\.venv\Lib\site-packages\fastapi\openapi\utils.py:246: UserWarning: Duplicate Operation ID health_check_health_get for function health_check at C:\Users\SH20695879\Desktop\inventory_management_phase1\backend\app\main.py
+  warnings.warn(message, stacklevel=1)

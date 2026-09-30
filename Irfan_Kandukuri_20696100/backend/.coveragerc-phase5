@@ -1,0 +1,11 @@
+[run]
+branch = True
+relative_files = True
+source =
+    backend/multi_agent
+
+[report]
+exclude_lines =
+    pragma: no cover
+    raise NotImplementedError
+    if __name__ == .__main__.:

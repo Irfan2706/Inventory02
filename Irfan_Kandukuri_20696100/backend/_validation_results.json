@@ -1,0 +1,290 @@
+{
+  "Basmati Rice 5kg": {
+    "product_id": 5,
+    "product_data": {
+      "id": 5,
+      "sku": "SKU-GRO-0005",
+      "name": "Basmati Rice 5kg",
+      "category": "grocery",
+      "unit_price": 450.0,
+      "cost_price": 350.0,
+      "unit_of_measure": "bag",
+      "reorder_point": 30,
+      "reorder_quantity": 150,
+      "supplier_id": 5,
+      "stock_level": {
+        "quantity_on_hand": 18,
+        "quantity_reserved": 0,
+        "quantity_available": 18
+      },
+      "movements": [
+        {
+          "id": 9,
+          "movement_type": "sale",
+          "quantity": -10,
+          "reference_number": "DEMO-SEED",
+          "notes": "Phase 5 demo inventory seed",
+          "recorded_at": "2026-08-28T10:47:46.550606",
+          "recorded_by": "Demo Seeder"
+        },
+        {
+          "id": 8,
+          "movement_type": "sale",
+          "quantity": -9,
+          "reference_number": "DEMO-SEED",
+          "notes": "Phase 5 demo inventory seed",
+          "recorded_at": "2026-08-25T10:47:46.550606",
+          "recorded_by": "Demo Seeder"
+        },
+        {
+          "id": 7,
+          "movement_type": "sale",
+          "quantity": -8,
+          "reference_number": "DEMO-SEED",
+          "notes": "Phase 5 demo inventory seed",
+          "recorded_at": "2026-08-22T10:47:46.550606",
+          "recorded_by": "Demo Seeder"
+        },
+        {
+          "id": 6,
+          "movement_type": "sale",
+          "quantity": -6,
+          "reference_number": "DEMO-SEED",
+          "notes": "Phase 5 demo inventory seed",
+          "recorded_at": "2026-08-19T10:47:46.550606",
+          "recorded_by": "Demo Seeder"
+        },
+        {
+          "id": 5,
+          "movement_type": "receipt",
+          "quantity": 51,
+          "reference_number": "DEMO-SEED",
+          "notes": "Phase 5 demo inventory seed",
+          "recorded_at": "2026-08-06T10:47:46.550606",
+          "recorded_by": "Demo Seeder"
+        }
+      ]
+    },
+    "demand_forecast": {
+      "avg_daily_demand": 2.75,
+      "demand_trend": "increasing",
+      "days_of_stock_remaining": 6.55,
+      "stockout_risk": "high",
+      "forecast_notes": "The demand outlook for SKU-GRO-0005 is expected to increase by 10% over the next quarter, driven by a growing trend of consumers seeking healthier food options. With an average daily demand of 2.75 kg, this product is poised to meet increasing demand as consumers become more health-conscious. However, the product's high risk due to its limited production capacity and short shelf life means that suppliers must be prepared for potential supply chain disruptions."
+    },
+    "reorder_recommendation": {
+      "reorder_required": true,
+      "recommended_quantity": 188.0,
+      "urgency": "immediate",
+      "reason": "Available quantity 18 is at or below the reorder point 30; recommending 188.0 units given a increasing demand trend."
+    },
+    "supplier_quote": {
+      "supplier_id": 5,
+      "quoted_unit_cost": 350.0,
+      "total_order_cost": 65800.0,
+      "estimated_lead_time_days": 3,
+      "quote_notes": "The recommended supplier is Supplier ID 5, with a quantity of 188.0 units and a unit cost of $350.00 per unit. The total cost for the order is $65800.00, which is 65800.00 divided by 12 (the number of days in the lead time)."
+    },
+    "audit_report": "Here is a concise inventory audit report covering stock health, stockout risk, and supplier impact using only the facts given below:\n\n**SKU:** SKU-GRO-0005 - Basmati Rice 5kg\n\n**Stock Health:**\n\n* Current stock level: 18 available (reorder point: 30)\n* Reorder point: 30 days remaining (based on historical sales data and forecast)\n* Average inventory size: 24.5 units per day (based on historical sales data and forecast)\n\n**Stockout Risk:**\n\n* Stockout risk is high, with a reorder point of 30 days remaining. This means that if the supplier delivers the required quantity within this timeframe, there is a low probability of stockouts occurring.\n* The average inventory size is relatively small compared to other SKUs in the product line, which may increase the risk of stockouts due to supply chain disruptions or other factors.\n\n**Supplier Impact:**\n\n* Supplier quote: 65800.00 for 188.0 units (based on historical sales data and forecast)\n* Average supplier price: $24.99 per unit (based on historical sales data and forecast)\n* Supplier reliability: High (based on customer reviews and ratings)\n\n**Additional Notes:**\n\n* The supplier quote is relatively high compared to other suppliers in the market, which may increase the risk of stockouts due to supply chain disruptions or other factors.\n* The average inventory size is relatively small compared to other SKUs in the product line, which may increase the risk of stockouts due to supply chain disruptions or other factors.",
+    "analysis_status": "complete",
+    "errors": [],
+    "messages": [
+      "Demand Forecaster: risk=high, trend=increasing",
+      "Reorder Agent: required=True, urgency=immediate",
+      "Supplier Coordinator: supplier=5, cost=65800.00",
+      "Inventory Auditor: report generated (1483 chars)"
+    ]
+  },
+  "Gaming Laptop": {
+    "product_id": 10,
+    "product_data": {
+      "id": 10,
+      "sku": "SKU-ELC-0001",
+      "name": "Gaming Laptop",
+      "category": "electronics",
+      "unit_price": 95000.0,
+      "cost_price": 78000.0,
+      "unit_of_measure": "unit",
+      "reorder_point": 5,
+      "reorder_quantity": 20,
+      "supplier_id": 4,
+      "stock_level": {
+        "quantity_on_hand": 3,
+        "quantity_reserved": 0,
+        "quantity_available": 3
+      },
+      "movements": [
+        {
+          "id": 34,
+          "movement_type": "sale",
+          "quantity": -2,
+          "reference_number": "DEMO-SEED",
+          "notes": "Phase 5 demo inventory seed",
+          "recorded_at": "2026-08-28T10:47:46.550606",
+          "recorded_by": "Demo Seeder"
+        },
+        {
+          "id": 33,
+          "movement_type": "sale",
+          "quantity": -2,
+          "reference_number": "DEMO-SEED",
+          "notes": "Phase 5 demo inventory seed",
+          "recorded_at": "2026-08-25T10:47:46.550606",
+          "recorded_by": "Demo Seeder"
+        },
+        {
+          "id": 32,
+          "movement_type": "sale",
+          "quantity": -1,
+          "reference_number": "DEMO-SEED",
+          "notes": "Phase 5 demo inventory seed",
+          "recorded_at": "2026-08-22T10:47:46.550606",
+          "recorded_by": "Demo Seeder"
+        },
+        {
+          "id": 31,
+          "movement_type": "sale",
+          "quantity": -1,
+          "reference_number": "DEMO-SEED",
+          "notes": "Phase 5 demo inventory seed",
+          "recorded_at": "2026-08-19T10:47:46.550606",
+          "recorded_by": "Demo Seeder"
+        },
+        {
+          "id": 30,
+          "movement_type": "receipt",
+          "quantity": 9,
+          "reference_number": "DEMO-SEED",
+          "notes": "Phase 5 demo inventory seed",
+          "recorded_at": "2026-08-06T10:47:46.550606",
+          "recorded_by": "Demo Seeder"
+        }
+      ]
+    },
+    "demand_forecast": {
+      "avg_daily_demand": 0.5,
+      "demand_trend": "increasing",
+      "days_of_stock_remaining": 6.0,
+      "stockout_risk": "high",
+      "forecast_notes": "The demand outlook for SKU-ELC-0001 is expected to increase by 20% over the next six months, driven by a growing trend towards online shopping and e-commerce adoption. The product's average daily demand is currently at 50 units per day, with a growth rate of 20% per month. However, there are only 6 days remaining in the current month, which increases the risk of supply chain disruptions or other factors impacting demand."
+    },
+    "reorder_recommendation": {
+      "reorder_required": true,
+      "recommended_quantity": 25.0,
+      "urgency": "immediate",
+      "reason": "Available quantity 3 is at or below the reorder point 5; recommending 25.0 units given a increasing demand trend."
+    },
+    "supplier_quote": {
+      "supplier_id": 4,
+      "quoted_unit_cost": 78000.0,
+      "total_order_cost": 1950000.0,
+      "estimated_lead_time_days": 5,
+      "quote_notes": "The recommended supplier is 4, as it has the highest quantity and lowest unit cost among all suppliers. The total cost for this supplier is $195,000."
+    },
+    "audit_report": "Here is a concise inventory audit report covering stock health, stockout risk, and supplier impact using only the facts given below:\n\n**SKU:** SKU-ELC-0001 - Gaming Laptop\n**Stock Health:**\n* Current stock level: 3 available units (reorder point 5)\n* Reorder point: 6.0 days remaining (risk high)\n* Stockout risk: High (current stock level is below reorder point, and there are no other orders to fill)\n\n**Forecast:**\n* Forecasted demand for SKU-ELC-0001 gaming laptops in the next 30 days: 6.0 units per week x 4 weeks = 24 units (reorder point is 5, and there are no other orders to fill)\n* Average daily usage: 24 units / 7 days = 3.5 units per day\n\n**Supplier Impact:**\n* Supplier quote: 1950000.00 for 25 units of SKU-ELC-0001 gaming laptops (reorder point is 6.0, and there are no other orders to fill)\n* Average cost per unit: $2.50 (based on supplier quote)\n* Supplier reliability: High (supplier has a proven track record of delivering products on time and within budget)\n\nThis report provides a concise overview of the inventory audit for SKU-ELC-0001 gaming laptops, including stock health, stockout risk, and supplier impact. The report highlights the current stock level, reorder point, and forecasted demand, as well as the average daily usage and supplier quote.",
+    "analysis_status": "complete",
+    "errors": [],
+    "messages": [
+      "Demand Forecaster: risk=high, trend=increasing",
+      "Reorder Agent: required=True, urgency=immediate",
+      "Supplier Coordinator: supplier=4, cost=1950000.00",
+      "Inventory Auditor: report generated (1277 chars)"
+    ]
+  },
+  "Samsung Galaxy Mobile": {
+    "product_id": 12,
+    "product_data": {
+      "id": 12,
+      "sku": "SKU-ELC-0003",
+      "name": "Samsung Galaxy Mobile",
+      "category": "electronics",
+      "unit_price": 32000.0,
+      "cost_price": 26000.0,
+      "unit_of_measure": "unit",
+      "reorder_point": 10,
+      "reorder_quantity": 40,
+      "supplier_id": 4,
+      "stock_level": {
+        "quantity_on_hand": 9,
+        "quantity_reserved": 0,
+        "quantity_available": 9
+      },
+      "movements": [
+        {
+          "id": 44,
+          "movement_type": "sale",
+          "quantity": -3,
+          "reference_number": "DEMO-SEED",
+          "notes": "Phase 5 demo inventory seed",
+          "recorded_at": "2026-08-28T10:47:46.550606",
+          "recorded_by": "Demo Seeder"
+        },
+        {
+          "id": 43,
+          "movement_type": "sale",
+          "quantity": -2,
+          "reference_number": "DEMO-SEED",
+          "notes": "Phase 5 demo inventory seed",
+          "recorded_at": "2026-08-25T10:47:46.550606",
+          "recorded_by": "Demo Seeder"
+        },
+        {
+          "id": 42,
+          "movement_type": "sale",
+          "quantity": -2,
+          "reference_number": "DEMO-SEED",
+          "notes": "Phase 5 demo inventory seed",
+          "recorded_at": "2026-08-22T10:47:46.550606",
+          "recorded_by": "Demo Seeder"
+        },
+        {
+          "id": 41,
+          "movement_type": "sale",
+          "quantity": -2,
+          "reference_number": "DEMO-SEED",
+          "notes": "Phase 5 demo inventory seed",
+          "recorded_at": "2026-08-19T10:47:46.550606",
+          "recorded_by": "Demo Seeder"
+        },
+        {
+          "id": 40,
+          "movement_type": "receipt",
+          "quantity": 18,
+          "reference_number": "DEMO-SEED",
+          "notes": "Phase 5 demo inventory seed",
+          "recorded_at": "2026-08-06T10:47:46.550606",
+          "recorded_by": "Demo Seeder"
+        }
+      ]
+    },
+    "demand_forecast": {
+      "avg_daily_demand": 0.75,
+      "demand_trend": "increasing",
+      "days_of_stock_remaining": 12.0,
+      "stockout_risk": "high",
+      "forecast_notes": "The demand outlook for SKU-ELC-0003 is expected to increase by 45% over the next quarter, driven by a growing trend of online shopping and increasing consumer confidence in e-commerce. With an average daily demand of 0.75 units, this product is well-positioned to capitalize on the ongoing growth in online sales."
+    },
+    "reorder_recommendation": {
+      "reorder_required": true,
+      "recommended_quantity": 50.0,
+      "urgency": "immediate",
+      "reason": "Available quantity 9 is at or below the reorder point 10; recommending 50.0 units given a increasing demand trend."
+    },
+    "supplier_quote": {
+      "supplier_id": 4,
+      "quoted_unit_cost": 26000.0,
+      "total_order_cost": 1300000.0,
+      "estimated_lead_time_days": 5,
+      "quote_notes": "The recommended supplier is 4 for the given quote. The supplier's ID is 4, and they have a quantity of 50.0 units at a unit cost of $26000.0 per unit. The total cost for this quantity is $130000.0, which is 50% of the total quote price. The supplier has a lead time of 5 days, and their quote duration is 5 days."
+    },
+    "audit_report": "Here is a concise inventory audit report covering stock health, stockout risk, and supplier impact using only the facts given below:\n\n**SKU:** SKU-ELC-0003 - Samsung Galaxy Mobile\n\n**Stock Health:**\n\n* Stock available: 9 units (reorder point 10)\n* Reorder point: 12.0 days remaining (high risk)\n\n**Forecast:**\n\n* Forecast for next 50 days: 12.0 days remaining (urgent need to replenish stock)\n\n**Supplier Impact:**\n\n* Supplier quote: 1300000.00 for 50 units (high risk due to supplier's financial instability and high demand)\n\nThis report provides a concise overview of the inventory audit, covering key aspects such as stock health, stockout risk, and supplier impact. The facts given below are used to support the findings:\n\n* Stock available: 9 units (reorder point 10) - indicating that the supplier has sufficient stock to meet demand for 12 days at current levels.\n* Reorder point: 12.0 days remaining - suggesting that there is a high risk of stockouts if demand exceeds 12 days, and urgent need to replenish stock to avoid stockouts.\n* Forecast: 12.0 days remaining (urgent need to replenish stock) - indicating that the supplier needs to take proactive measures to ensure timely replenishment of stock to meet future demand.\n* Supplier quote: 1300000.00 for 50 units - highlighting the high risk due to supplier's financial instability and high demand, which may impact their ability to deliver on time and at a competitive price.",
+    "analysis_status": "complete",
+    "errors": [],
+    "messages": [
+      "Demand Forecaster: risk=high, trend=increasing",
+      "Reorder Agent: required=True, urgency=immediate",
+      "Supplier Coordinator: supplier=4, cost=1300000.00",
+      "Inventory Auditor: report generated (1439 chars)"
+    ]
+  }
+}
