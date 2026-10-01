@@ -31,37 +31,87 @@ export function LoginPage() {
   };
 
   return (
-    <div className="relative flex min-h-screen items-center justify-center overflow-hidden p-4">
-      <div className="absolute left-1/2 top-1/2 h-[520px] w-[520px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-indigo-600/15 blur-3xl" />
-      <div className="relative grid w-full max-w-5xl overflow-hidden rounded-3xl border border-white/10 bg-slate-950/70 shadow-2xl shadow-black/50 backdrop-blur-xl lg:grid-cols-[1.05fr_.95fr]">
-        <div className="hidden flex-col justify-between border-r border-white/10 bg-gradient-to-br from-indigo-600/25 via-slate-950/20 to-cyan-500/10 p-10 lg:flex"><div><div className="flex items-center gap-3"><span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-500 to-cyan-400 font-heading text-xl font-extrabold text-white">P</span><div><p className="font-heading font-extrabold text-white">POC-07</p><p className="text-[10px] uppercase tracking-[.22em] text-slate-400">Inventory OS</p></div></div><h2 className="mt-20 max-w-sm font-heading text-4xl font-extrabold leading-tight tracking-tight text-white">See the whole operation clearly.</h2><p className="mt-5 max-w-sm text-sm leading-6 text-slate-400">A calm command center for products, procurement, stock health, and the decisions that keep your business moving.</p></div><div className="flex items-center gap-2 text-xs text-slate-500"><span className="h-2 w-2 rounded-full bg-emerald-400" /> Secure workspace · POC-07</div></div>
-        <div className="p-7 sm:p-10">
-        <div className="mb-10 flex items-center gap-3 lg:hidden"><span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-500 to-cyan-400 font-heading text-lg font-bold text-white">P</span><div><p className="font-heading font-extrabold text-white">POC-07</p><p className="text-[10px] uppercase tracking-[.2em] text-slate-500">Inventory OS</p></div></div>
-        <p className="text-xs font-bold uppercase tracking-[.22em] text-cyan-300">Welcome back</p><h1 className="mt-3 font-heading text-3xl font-extrabold tracking-tight text-white">Sign in to your workspace</h1>
-        <p className="mt-2 text-sm text-slate-400">Manage products, procurement, and stock alerts from one place.</p>
+    <div className="relative flex min-h-screen items-center justify-center bg-slate-100/70 p-4 sm:p-6 lg:p-8">
+      <div className="grid w-full max-w-4xl overflow-hidden rounded-2xl border border-slate-200/80 bg-white shadow-xl lg:grid-cols-12">
+        {/* Left Hero Panel */}
+        <div className="flex flex-col justify-between bg-gradient-to-br from-slate-900 via-slate-800 to-teal-950 p-8 text-white lg:col-span-5 sm:p-10">
+          <div>
+            <div className="flex items-center gap-3">
+              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-teal-500 font-heading text-lg font-bold text-white shadow-md shadow-teal-500/20">
+                P
+              </span>
+              <div>
+                <p className="font-heading font-bold text-white leading-tight">POC-07</p>
+                <p className="text-[10px] font-semibold uppercase tracking-widest text-teal-400">Inventory OS</p>
+              </div>
+            </div>
+            <div className="mt-16">
+              <h2 className="font-heading text-3xl font-extrabold text-white leading-tight">
+                Enterprise Inventory Intelligence
+              </h2>
+              <p className="mt-4 text-sm text-slate-300 leading-relaxed">
+                Streamline procurement, monitor stock levels, and automate reorders with realtime analytics.
+              </p>
+            </div>
+          </div>
+          <div className="mt-12 flex items-center gap-2 text-xs text-slate-400 border-t border-slate-800 pt-6">
+            <span className="h-2 w-2 rounded-full bg-teal-400 animate-pulse" />
+            Workspace Active · POC-07 Enterprise
+          </div>
+        </div>
 
-        <form className="mt-6 space-y-4" onSubmit={onSubmit}>
-          <label className="block">
-            <span className="mb-1 block text-sm font-medium text-slate-300">Email</span>
-            <input className="input" value={email} onChange={(e) => setEmail(e.target.value)} />
-          </label>
+        {/* Right Form Panel */}
+        <div className="p-8 sm:p-10 lg:col-span-7 flex flex-col justify-center">
+          <div>
+            <span className="inline-block rounded-md bg-teal-50 px-2.5 py-1 text-xs font-semibold text-teal-700 border border-teal-200/60">
+              Account Login
+            </span>
+            <h1 className="mt-3 font-heading text-2xl font-bold tracking-tight text-slate-900">
+              Sign in to your dashboard
+            </h1>
+            <p className="mt-1.5 text-sm text-slate-500">
+              Enter your credential details to access your workspace.
+            </p>
+          </div>
 
-          <label className="block">
-            <span className="mb-1 block text-sm font-medium text-slate-300">Password</span>
-            <input
-              type="password"
-              className="input"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
-          </label>
+          <form className="mt-8 space-y-5" onSubmit={onSubmit}>
+            <div>
+              <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-slate-700">
+                Email Address
+              </label>
+              <input
+                type="email"
+                className="input"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+              />
+            </div>
 
-          {error ? <p className="rounded-lg bg-red-50 px-3 py-2 text-sm text-red-700">{error}</p> : null}
+            <div>
+              <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-slate-700">
+                Password
+              </label>
+              <input
+                type="password"
+                className="input"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
+              />
+            </div>
 
-          <button type="submit" className="btn-primary w-full" disabled={loading}>
-            {loading ? "Signing in..." : "Sign in"}
-          </button>
-        </form></div>
+            {error ? (
+              <div className="rounded-xl bg-red-50 p-3.5 border border-red-200 text-sm text-red-700 font-medium">
+                {error}
+              </div>
+            ) : null}
+
+            <button type="submit" className="btn-primary w-full py-3" disabled={loading}>
+              {loading ? "Authenticating..." : "Sign in to Workspace"}
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   );
