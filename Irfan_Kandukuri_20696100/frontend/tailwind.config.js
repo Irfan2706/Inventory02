@@ -4,23 +4,20 @@ export default {
   theme: {
     extend: {
       colors: {
-        canvas: "#080d19",
-        ink: "#f8fafc",
-        accent: "#6366f1",
-        accentSoft: "#1e293b",
-        panel: "#111827",
+        canvas: "#f8fafc",
+        ink: "#0f172a",
+        accent: "#0d9488",
+        accentSoft: "#f0fdf4",
+        panel: "#ffffff",
         warning: "#f59e0b",
-        danger: "#dc2626",
+        danger: "#ef4444",
       },
       fontFamily: {
-        heading: ["'Manrope'", "sans-serif"],
-        body: ["'DM Sans'", "sans-serif"],
+        heading: ["'Plus Jakarta Sans'", "sans-serif"],
+        body: ["'Inter'", "sans-serif"],
       },
       boxShadow: {
-        lift: "0 20px 60px -35px rgba(0, 0, 0, 0.8)",
-      },
-      backgroundImage: {
-        haze: "radial-gradient(circle at 10% 0%, rgba(79,70,229,.16), transparent 30%), radial-gradient(circle at 92% 8%, rgba(6,182,212,.11), transparent 27%)",
+        lift: "0 10px 30px -10px rgba(0, 0, 0, 0.08)",
       },
     },
   },
